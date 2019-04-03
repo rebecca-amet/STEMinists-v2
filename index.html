@@ -20,7 +20,7 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-default fixed-top border" style="background-color:white">
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top border" style="background-color:white">
       <a class="navbar-brand" href="./index.html">
         <img src="./images/campanile.jpg" width="75" height="50" alt="">
       </a>
@@ -29,7 +29,7 @@
       </button>
 
       <div class="collapse navbar-collapse navHeaderCollapse" style="color: black" id="navbarsExampleDefault">
-        <ul class="nav navbar-nav mr-auto">
+        <ul class="nav navbar-nav ml-auto">
           <li class="nav-item active dropdown">
             <a class="nav-link dropdown-toggle  navbar-tekst" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,20 +68,20 @@
             </div>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
+        <!--<form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2  navbar-tekst" type="search" style="background-color: white;" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-dark my-2 my-sm-0  navbar-tekst" style="background-color: white;" type="submit">Search</button>
-        </form>
+        </form>-->
       </div>
     </nav>
 
     <div class="icon-bar">
-      <a href="https://www.facebook.com" class="facebook"><i class="fa fa-facebook"></i></a>
-      <a href="https://www.instagram.com" class="instagram"><i class="fa fa-instagram"></i></a>
-      <a href="https://www.twitter.com" class="twitter"><i class="fa fa-twitter"></i></a>
-      <a href="./about_us/contact.html" class="mail"><i class="fa fa-envelope"></i></a>
-      <a href="https://www.linkedin.com" class="linkedin"><i class="fa fa-linkedin"></i></a>
-      <a href="https://youtube.com" class="youtube"><i class="fa fa-youtube"></i></a>
+      <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="./about_us/contact.html" class="mail" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a href="https://www.linkedin.com" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
+      <a href="https://youtube.com" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
     </div>
 
     <div id="myCarousel" class="carousel slide carousel-fade mx-auto" style="width: 80vw;" data-ride="carousel">
@@ -145,6 +145,17 @@
 
       <div><p>Line of writing</p></div>
 
+      <div class="text-center">
+        <h1>STEMstats</h1>
+        <div class="row">
+          <div class="col">
+            <div id="donutchart1" style="width: 550px; height: 300px;"></div>
+          </div>
+          <div>
+            <div id="donutchart2" style="width: 550px; height: 300px;"></div>
+          </div>
+        </div>
+
       <div class="row">
         <div class="col-sm">
           One of three columns
@@ -153,7 +164,6 @@
           Two of three columns
         </div>
       </div>
-
 
     </main><!-- /.container -->
 
@@ -164,5 +174,45 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="https://getbootstrap.com/docs/4.1/assets/js/vendor/popper.min.js"></script>
     <script src="https://getbootstrap.com/docs/4.1/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Gender', 'number'],
+        ['Men',      71],
+        ['Women',     29]
+      ]);
+
+      var options = {
+        title: 'Women vs. Men working in STEM',
+        pieHole: 0.6,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
+      chart.draw(data, options);
+    }
+    </script>
+    <script type="text/javascript">
+    google.charts.load("current", {packages:["corechart"]});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Gender', 'number of Nobelprizes'],
+        ['Men',      557],
+        ['Women',     18]
+      ]);
+
+      var options = {
+        title: 'Distribution of Nobelprizes in STEM since 1903',
+        pieHole: 0.6,
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
+      chart.draw(data, options);
+    }
+    </script>
+
   </body>
 </html>
