@@ -1,5 +1,5 @@
 body {
-  padding-top: 10vh;
+  padding-top: 7.5vh;
   /*background-color: rgba(201, 223, 242, 1);*/
 }
 .starter-template {
@@ -22,6 +22,25 @@ body {
     line-height: 1;
     color: inherit;
 }
+
+.nav a {
+    font-size: 1.1rem !important;
+}
+
+.nav a:hover {
+  color: #ee4266;
+  text-decoration: none;
+  outline: none;
+}
+
+/*Top header image*/
+.header-image {
+    background: url("../images/STEM.png")no-repeat center center;
+    background-size: cover;
+  }
+html, body, header, .view {
+      height: 75%;
+  }
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -46,7 +65,7 @@ body {
 /*Font-size navbar*/
 .navbar-tekst {
   font-size: 1rem;
-  color: inherit;
+  color: white;
 }
 
 .carousel-indicators li {
@@ -81,37 +100,37 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 0.75vw 2vh;
+  padding: 0.5vw 2vh;
   transition: all 0.3s ease;
   color: white;
   font-size: 1.5rem;
 }
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-  background-color: #000;
+  color: #ee4266;
 }
 .facebook {
-  background: #3B5998;
+  background: #000;
   color: white;
 }
 .twitter {
-  background: #55ACEE;
+  background: #000;
   color: white;
 }
 .mail {
-  background: #dd4b39;
+  background: #000;
   color: white;
 }
 .instagram {
-  background: #f09433;
+  background: #000;
   color: white;
 }
 .linkedin {
-  background: #007bb5;
+  background: #000;
   color: white;
 }
 .youtube {
-  background: #bb0000;
+  background: #000;
   color: white;
 }
 

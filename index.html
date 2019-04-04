@@ -20,15 +20,15 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-default fixed-top border" style="background-color:white">
+    <nav class="navbar navbar-expand-lg navbar-default fixed-top" style="background-color: #3e2f54">
       <a class="navbar-brand" href="./index.html">
-        <img src="./images/campanile.jpg" width="75" height="50" alt="">
+        <img src="./images/STEMinists-logo.png" width="80" height="80" alt="">
       </a>
       <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse navHeaderCollapse" style="color: black" id="navbarsExampleDefault">
+      <div class="collapse navbar-collapse navHeaderCollapse" id="navbarsExampleDefault">
         <ul class="nav navbar-nav ml-auto">
           <li class="nav-item active dropdown">
             <a class="nav-link dropdown-toggle  navbar-tekst" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About us</a>
@@ -39,18 +39,18 @@
             </div>
           </li>
           <li class="nav-item active">
-            <a class="nav-link  navbar-tekst" style= "color:black" href="./workshops.html">Workshops</a>
+            <a class="nav-link  navbar-tekst" href="./workshops.html">Workshops</a>
           </li>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle  navbar-tekst" style= "color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
+            <a class="nav-link dropdown-toggle  navbar-tekst" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">News</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="./news/latest_news.html">Latest News</a>
+              <a class="dropdown-item" href="./news/newsfeed.html">Latest News</a>
               <a class="dropdown-item" href="./news/interviews.html">Interviews</a>
               <a class="dropdown-item" href="./news/blog.html">Blog</a>
             </div>
           </li>
           <li class="nav-item active dropdown">
-            <a class="nav-link dropdown-toggle navbar-tekst" style= "color:black" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women in Science</a>
+            <a class="nav-link dropdown-toggle navbar-tekst" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Women in Science</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="./women_in_science/biology.html">Biology</a>
               <a class="dropdown-item" href="./women_in_science/biochemistry.html">Biochemistry</a>
@@ -74,12 +74,27 @@
         </form>-->
       </div>
     </nav>
+    <div class="view header-image">
+       <div class="full-bg-img">
+         <div class="mask rgba-black-light flex-center">
+           <div class="container text-center white-text">
+             <div class="white-text text-center wow fadeInUp">
+               <h2> </h2>
+               <h5> </h5>
+               <p> </p><br>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <div><h2> <br> </h2></div>
 
     <div class="icon-bar">
       <a href="https://www.facebook.com" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
       <a href="https://www.instagram.com" class="instagram" target="_blank"><i class="fa fa-instagram"></i></a>
       <a href="https://www.twitter.com" class="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
-      <a href="./about_us/contact.html" class="mail" target="_blank"><i class="fa fa-envelope"></i></a>
+      <a href="./about_us/contact.html" class="mail"><i class="fa fa-envelope"></i></a>
       <a href="https://www.linkedin.com" class="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
       <a href="https://youtube.com" class="youtube" target="_blank"><i class="fa fa-youtube"></i></a>
     </div>
@@ -112,6 +127,10 @@
       </div>
     </div>
 
+
+    <div><h2><br></h2></div>
+
+
     <main role="main" class="container">
 
       <div class="text-center">
@@ -143,7 +162,9 @@
         </div>
       </div>
 
-      <div><p>Line of writing</p></div>
+
+      <div><h2><br></h2></div>
+
 
       <div class="text-center">
         <h1>STEMstats</h1>
@@ -156,14 +177,6 @@
           </div>
         </div>
 
-      <div class="row">
-        <div class="col-sm">
-          One of three columns
-        </div>
-        <div class="col-sm">
-          Two of three columns
-        </div>
-      </div>
 
     </main><!-- /.container -->
 
@@ -188,6 +201,7 @@
       var options = {
         title: 'Women vs. Men working in STEM',
         pieHole: 0.6,
+        colors: ['blue', '#ee4266']
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('donutchart1'));
@@ -207,6 +221,7 @@
       var options = {
         title: 'Distribution of Nobelprizes in STEM since 1903',
         pieHole: 0.6,
+        colors: ['blue', '#ee4266']
       };
 
       var chart = new google.visualization.PieChart(document.getElementById('donutchart2'));
