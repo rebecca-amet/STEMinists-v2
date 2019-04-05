@@ -39,7 +39,7 @@ body {
     background-size: cover;
   }
 html, body, header, .view {
-      height: 75%;
+      height: 65%;
   }
 
 /* Sticky footer styles
@@ -138,4 +138,9 @@ body {
   .icon-bar{
     display: none;
   }
+}
+
+/*Footer*/
+.list-unstyled a:hover {
+  color: #ee4266;
 }
