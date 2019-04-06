@@ -31,3 +31,7 @@ img {
   background-color: #3e2f54;
   width: 30%;
 }
+
+.btn-primary:hover {
+    background-color: purple !important;
+}
