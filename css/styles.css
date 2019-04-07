@@ -141,6 +141,17 @@ body {
 }
 
 /*Footer*/
+.list-unstyled a {
+  color: white;
+}
 .list-unstyled a:hover {
+  color: #ee4266;
+}
+
+/*Copyright*/
+.footer-copyright a {
+  color: white;
+}
+.footer-copyright a:hover {
   color: #ee4266;
 }
