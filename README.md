@@ -1,29 +1,12 @@
-# Bootstrap
 
-Welcome to twitter bootstrap! This is a template website that you will use to experiment with the framework, adding components and adjusting the styles accordingly. You will revisit this throughout the session but first, you will need to download it to your machine.
+STEMinists is a platform for women who are interested in all things STEM. Here, you can find information about female scientists who have excelled in their field as well as upcoming events and news. STEMinists also aims to provide statistics about women in STEM in order to raise awareness of gender-imbalance in the field.
 
-## First Task
-- Click on the 'Fork' icon on the top right of the page, and fork it into your github account.
-You will now have your own copy of this excercise on your github profile.
-- Navigate to your version of this project
-- Click 'clone or download'
-- Select the 'open in desktop' option
-- Clone the repo into your coding_course folder, here is an example:
-- Open the folder in Atom
+Three pages are live at the moment. This includes the home page, contact us page and women in biology page. These serve as examples/templates of the different kind of pages that will make up the platform in full. The home page contains a variety of elements, including expanding notification bar which is responsive and allows for smaller screen sizes, becomes a collapsable notification bar instead of a standard one. The colours of the buttons change when you hover on them. It also contains responsive donut charts providing statistics. The footer also contains clickable links.
 
-![Example of how to clone into folder using github desktop](./images/clone-in-desktop-example.png)
+The contact us page provides a javascript notification if the user clicks send without filling out a field in the form.
 
+The women in biology page contains information on female scientists formatted in columns, with a primary button that changes colour when you hover on it.
 
-## Second Task
-Link the bootstrap CSS into your HTML
+All pages have a sticky social media bar that when hovered over changes to pink. There is also a fixed header/notification bar that scrolls with the page.
 
-You can find this by looking for the CDN link on [Bootstrap.com](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-
-
-## Third Task
-
-1. Add a new row in the page that has two columns, with a block of writing in each.
-2. Add a Carousel to the top of your page, with pictures! [instructions here](https://getbootstrap.com/docs/4.1/components/carousel/)
-3. Add a modal to your page [instructions here](https://getbootstrap.com/docs/4.1/components/modal/)
-4. Write over bootstrap! In the 'styles.css' file, change the design of the default CSS styles (this could be colors, fonts, images - the website is your oyster)
-5. Add any more boostrap components you think look cool!
+Link: https://steminists.github.io/STEMinists-v2/
