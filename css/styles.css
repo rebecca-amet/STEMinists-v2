@@ -2,14 +2,11 @@ body {
   padding-top: 7.5vh;
   /*background-color: rgba(201, 223, 242, 1);*/
 }
-.starter-template {
-  padding: 4rem 1.5rem;
-  text-align: center;
-}
 
-.h1, h1 {
+
+/*.h1, h1 {
     font-size: 4vw;
-}
+}*/
 .h2 {
   font-size: 3rem;
 }
@@ -80,7 +77,10 @@ body {
 }
 
 .carousel-caption {
-  margin-bottom: 2.5vw;
+  margin-bottom: .5vw;
+}
+.carousel-caption a {
+  font-size: 4vw;
 }
 
 .border {
