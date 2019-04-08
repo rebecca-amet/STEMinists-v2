@@ -2,7 +2,10 @@ body {
   padding-top: 7.5vh;
   /*background-color: rgba(201, 223, 242, 1);*/
 }
-
+.starter-template {
+  padding: 4rem 1.5rem;
+  text-align: center;
+}
 
 /*.h1, h1 {
     font-size: 4vw;
@@ -136,6 +139,9 @@ body {
 
 @media (max-width: 767.98px) {
   .icon-bar{
+    display: none;
+  }
+  .charts{
     display: none;
   }
 }
